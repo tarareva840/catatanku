@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Palet warna: hijau sage (aksen utama) di atas latar krem seperti kertas.
 class AppColors {
   AppColors._();
 
@@ -15,7 +14,6 @@ class AppColors {
   static const Color danger = Color(0xFFC8473B);
 }
 
-/// Gaya teks yang dipakai di semua halaman agar tampilan konsisten.
 class AppText {
   AppText._();
 

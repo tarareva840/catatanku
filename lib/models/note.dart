@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Warna latar kartu catatan (mirip pilihan warna di Google Keep).
 class NoteColor {
   const NoteColor({required this.name, required this.bg});
 
@@ -28,7 +27,6 @@ enum Priority {
   final Color color;
 }
 
-/// Satu butir tugas pada catatan berbentuk daftar centang.
 class ChecklistItem {
   ChecklistItem(this.text, {this.done = false});
 
@@ -63,8 +61,7 @@ class Note {
 
   int get doneCount => checklist.where((item) => item.done).length;
 
-  /// Ringkasan satu baris untuk tampilan daftar.
-  String get preview {
+    String get preview {
     if (checklist.isNotEmpty) {
       return '$doneCount dari ${checklist.length} tugas selesai';
     }

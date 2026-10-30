@@ -11,7 +11,6 @@ import '../routes/app_routes.dart';
 import '../widgets/color_dot.dart';
 import '../widgets/note_actions.dart';
 
-/// Halaman 4: Detail Catatan (isi, daftar tugas, warna, aksi cepat).
 class NoteDetailScreen extends StatelessWidget {
   const NoteDetailScreen({super.key, required this.note});
 

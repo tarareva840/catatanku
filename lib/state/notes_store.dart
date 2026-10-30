@@ -4,8 +4,6 @@ import '../data/dummy_data.dart';
 import '../models/note.dart';
 import '../models/user_profile.dart';
 
-/// Penyimpan data sementara di memori (berisi data dummy).
-/// Dipakai bersama oleh semua halaman agar perubahan langsung terlihat.
 class NotesStore extends ChangeNotifier {
   NotesStore._();
 
@@ -22,7 +20,6 @@ class NotesStore extends ChangeNotifier {
   bool get reminderOn => _reminderOn;
   bool get lockOn => _lockOn;
 
-  /// Catatan aktif: yang tersemat di atas, lalu yang terbaru.
   List<Note> get notes {
     final active = _notes.where((note) => !note.archived).toList();
     active.sort((a, b) {

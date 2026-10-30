@@ -7,7 +7,6 @@ import '../theme/app_theme.dart';
 import '../utils/responsive.dart';
 import '../widgets/color_dot.dart';
 
-/// Halaman 4: Tambah Catatan. Jika [note] diisi, halaman ini menjadi Ubah Catatan.
 class AddNoteScreen extends StatefulWidget {
   const AddNoteScreen({super.key, this.note});
 

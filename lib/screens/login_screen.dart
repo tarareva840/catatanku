@@ -4,8 +4,6 @@ import '../routes/app_routes.dart';
 import '../theme/app_theme.dart';
 import '../widgets/app_logo.dart';
 
-/// Halaman 2: Login statis (tanpa server dan tanpa validasi).
-/// Tombol Masuk langsung membuka Beranda, kolom boleh dikosongkan.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 

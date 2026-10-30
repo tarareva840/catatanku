@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../models/note.dart';
 import 'note_card.dart';
 
-/// Grid dua/tiga kolom dengan tinggi kartu yang berbeda-beda (masonry).
-/// Kartu baru selalu ditaruh di kolom yang paling pendek.
 class NoteMasonry extends StatelessWidget {
   const NoteMasonry({
     super.key,

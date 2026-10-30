@@ -7,7 +7,6 @@ import '../screens/note_detail_screen.dart';
 import '../screens/splash_screen.dart';
 import '../state/notes_store.dart';
 
-/// Named route untuk lima halaman aplikasi.
 class AppRoutes {
   AppRoutes._();
 
@@ -17,7 +16,7 @@ class AppRoutes {
   static const String add = '/add';
   static const String detail = '/detail';
 
-  static Route<void> onGenerateRoute(RouteSettings settings) {
+static Route<void> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case login:
         return _fade(settings, const LoginScreen());
@@ -37,7 +36,6 @@ class AppRoutes {
     }
   }
 
-  /// Transisi memudar untuk perpindahan tab.
   static Route<void> _fade(RouteSettings settings, Widget page) {
     return PageRouteBuilder<void>(
       settings: settings,
@@ -53,7 +51,6 @@ class AppRoutes {
     );
   }
 
-  /// Transisi naik dari bawah untuk halaman form.
   static Route<void> _slideUp(RouteSettings settings, Widget page) {
     return PageRouteBuilder<void>(
       settings: settings,
@@ -79,7 +76,7 @@ class AppRoutes {
     );
   }
 
-  /// Transisi geser halus untuk halaman detail.
+  
   static Route<void> _slide(RouteSettings settings, Widget page) {
     return PageRouteBuilder<void>(
       settings: settings,

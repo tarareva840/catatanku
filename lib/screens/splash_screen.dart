@@ -6,7 +6,6 @@ import '../routes/app_routes.dart';
 import '../theme/app_theme.dart';
 import '../widgets/app_logo.dart';
 
-/// Halaman 1: Splash Screen (logo, nama aplikasi, lalu menuju Login).
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

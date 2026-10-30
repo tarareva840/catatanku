@@ -1,41 +1,40 @@
 # CatatanKu
 
-Aplikasi catatan sederhana berbasis Flutter. Output Fase 2: 100% slicing UI,
-navigasi antar-halaman, dan data statis (dummy).
+CatatanKu adalah aplikasi pencatatan sederhana yang dibuat menggunakan Flutter. Aplikasi ini membantu pengguna membuat dan mengelola catatan dengan mudah.
 
-## Lima halaman wajib
+## Halaman Aplikasi
 
-| # | Halaman | Named route | File |
-|---|---------|-------------|------|
-| 1 | Splash Screen | `/` | `lib/screens/splash_screen.dart` |
-| 2 | Login Statis | `/login` | `lib/screens/login_screen.dart` |
-| 3 | Beranda | `/home` | `lib/screens/home_screen.dart` |
-| 4 | Tambah Catatan | `/add` | `lib/screens/add_note_screen.dart` |
-| 5 | Detail Catatan | `/detail` | `lib/screens/note_detail_screen.dart` |
+Aplikasi ini memiliki lima halaman utama:
 
-Alur: Splash -> Login -> Beranda -> (Tambah Catatan / Detail Catatan).
-Route didaftarkan di `lib/routes/app_routes.dart` dengan transisi fade/slide.
+- **Splash Screen** – tampilan awal aplikasi.
+- **Login** – halaman untuk masuk ke aplikasi.
+- **Beranda** – menampilkan daftar catatan, pencarian, dan filter.
+- **Tambah Catatan** – untuk membuat dan mengubah catatan.
+- **Detail Catatan** – menampilkan informasi dan pilihan pengelolaan catatan.
 
-Beranda memiliki bottom navigation (Beranda, Arsip, Profil). Arsip dan Profil
-adalah tab di dalam halaman Beranda (`lib/screens/tabs/`), bukan halaman baru.
-Halaman Tambah Catatan juga dipakai untuk mengubah catatan (tombol pensil di Detail).
+Selain itu, terdapat menu Arsip dan Profil yang dapat diakses melalui navigasi di bagian bawah halaman Beranda.
 
 ## Fitur
 
-- Login: validasi email dan password, tampilkan/sembunyikan password (statis, tanpa server)
-- Beranda: pencarian, filter kategori dan prioritas, tampilan daftar/grid, menu titik tiga
-- Tambah Catatan: judul, isi, kategori (dropdown), warna, prioritas, validasi form
-- Detail: ubah, hapus, sematkan, arsipkan, salin, ganti warna, centang daftar tugas
-- Layout responsif untuk berbagai ukuran layar
+- Login dengan validasi sederhana.
+- Menambah, mengubah, dan menghapus catatan.
+- Mencari dan memfilter catatan.
+- Mengatur kategori, warna, dan prioritas.
+- Menyematkan dan mengarsipkan catatan.
+- Menyalin isi catatan.
+- Menandai daftar tugas.
 
-## Data dummy
+## Struktur Folder
 
-Semua data ada di `lib/data/dummy_data.dart` dan disimpan di memori oleh
-`lib/state/notes_store.dart`. Belum ada API atau database.
+Kode utama aplikasi berada di dalam folder `lib`, yang terdiri dari:
 
-## Menjalankan
+- `screens` – menyimpan halaman aplikasi.
+- `models` – menyimpan struktur data.
+- `data` – menyimpan data contoh.
+- `state` – mengelola data catatan.
+- `widgets` – menyimpan komponen tampilan.
+- `routes` – mengatur navigasi halaman.
+- `theme` – mengatur tema aplikasi.
+- `utils` – menyimpan fungsi pendukung.
 
-```
-flutter pub get
-flutter run
-```
+

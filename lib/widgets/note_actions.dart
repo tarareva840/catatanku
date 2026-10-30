@@ -4,7 +4,6 @@ import '../models/note.dart';
 import '../state/notes_store.dart';
 import '../theme/app_theme.dart';
 
-/// Dialog konfirmasi hapus. Mengembalikan true jika catatan jadi dihapus.
 Future<bool> confirmDeleteNote(BuildContext context, Note note) async {
   final messenger = ScaffoldMessenger.of(context);
   final confirmed = await showDialog<bool>(

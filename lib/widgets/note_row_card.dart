@@ -7,7 +7,6 @@ import '../utils/date_format.dart';
 
 enum _RowAction { pin, archive, delete }
 
-/// Baris catatan untuk tampilan daftar, dengan menu titik tiga.
 class NoteRowCard extends StatelessWidget {
   const NoteRowCard({
     super.key,

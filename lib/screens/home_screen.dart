@@ -5,8 +5,6 @@ import 'tabs/archive_tab.dart';
 import 'tabs/home_tab.dart';
 import 'tabs/profile_tab.dart';
 
-/// Halaman 3: Beranda. Berisi bottom navigation (Beranda, Arsip, Profil)
-/// dan tombol + untuk membuka halaman Tambah Catatan.
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

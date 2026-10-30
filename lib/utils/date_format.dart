@@ -28,17 +28,14 @@ const List<String> _bulanSingkat = [
   'Des',
 ];
 
-/// Contoh hasil: 19 Oktober 2026
 String formatTanggal(DateTime date) {
   return '${date.day} ${_namaBulan[date.month - 1]} ${date.year}';
 }
 
-/// Contoh hasil: 19 Okt
 String formatSingkat(DateTime date) {
   return '${date.day} ${_bulanSingkat[date.month - 1]}';
 }
 
-/// Contoh hasil: 09.30
 String formatJam(DateTime date) {
   final jam = date.hour.toString().padLeft(2, '0');
   final menit = date.minute.toString().padLeft(2, '0');

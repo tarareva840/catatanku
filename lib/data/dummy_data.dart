@@ -4,8 +4,6 @@ import '../models/note.dart';
 import '../models/note_category.dart';
 import '../models/user_profile.dart';
 
-/// Seluruh data pada aplikasi ini masih statis (dummy), tanpa API/database.
-
 const List<NoteCategory> dummyCategories = [
   NoteCategory(
     name: 'Penting',

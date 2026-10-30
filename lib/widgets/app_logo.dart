@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Logo aplikasi: kotak hijau dengan ikon catatan dan titik kuning.
 class AppLogo extends StatelessWidget {
   const AppLogo({super.key, this.size = 88});
 

@@ -5,7 +5,6 @@ import '../models/note.dart';
 import '../theme/app_theme.dart';
 import '../utils/date_format.dart';
 
-/// Kartu catatan berwarna untuk tampilan grid (mirip Google Keep).
 class NoteCard extends StatelessWidget {
   const NoteCard({
     super.key,
